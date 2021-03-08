@@ -18,6 +18,6 @@
     }
   </style>
 
-  <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)"/>
+  <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)" rx="20"/>
   <text x="20" y="35" class="intro-text">Hello, I'm Mateusz</text>
 </svg>
