@@ -7,7 +7,7 @@
       font-family: 'Lato', sans-serif;
       font-weight: 100;
     }
-    .intro-text {
+    .intro-text-2 {
       fill: blue;
       font-size: 2rem;
       font-family: sans-serif;
