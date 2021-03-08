@@ -1,6 +1,6 @@
 <svg width="1500" height="500" viewBox="0 0 1500 500" xmlns="http://www.w3.org/2000/svg">
   <style>
-    /* latin */
+    /* Font converter: https://amio.github.io/embedded-google-fonts/ */
     @font-face {
       font-family: 'Lato';
       font-style: normal;
@@ -11,19 +11,12 @@
     }
 
     .intro-text {
-      fill: blue;
-      font-size: 2rem;
+      fill: rgb(38, 139, 210);
+      font-size: 6rem;
       font-family: 'Lato', sans-serif;
-      font-weight: 100;
-    }
-    .intro-text-2 {
-      fill: blue;
-      font-size: 2rem;
-      font-family: sans-serif;
       font-weight: 100;
     }
   </style>
 
   <text x="20" y="35" class="intro-text">Hello, I'm Mateusz</text>
-  <text x="20" y="80" class="intro-text-2">Hello, I'm Mateusz</text>
 </svg>
