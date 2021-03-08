@@ -26,6 +26,8 @@
       border: 5px solid red;
       box-shadow: 0 0 10 #ffa500;
       border-radius: 100%;
+
+      transform: scale(0);
     }
 
     .welcome-emoji {
