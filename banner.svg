@@ -19,13 +19,10 @@
       font-size: 6rem;
       font-family: 'Lato', sans-serif;
       font-weight: 100;
-      position: absolute;
-      top: calc(50%-3rem);
-      text-align: center;
     }
   </style>
   <g class="container">
     <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)" rx="6"/>
-    <text x="0" y="0" class="intro-text">Hello, I'm Mateusz</text>
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="intro-text">Hello, I'm Mateusz</text>
   </g>
 </svg>
