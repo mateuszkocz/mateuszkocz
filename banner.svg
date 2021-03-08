@@ -106,7 +106,7 @@
   </style>
   <defs>
     <clipPath id="clip">
-      <rect width="1300px" height="300px" rx="6" fill="white"/>
+      <rect width="1488px" height="488px" rx="6" fill="white"/>
     </clipPath>
   </defs>
 
@@ -121,9 +121,9 @@
     <!-- Waving emoji -->
     <circle cx="50%" cy="50%" fill="white" r="1500px" class="emoji-slide-background"/>
     <g class="slide emoji-slide">
-      <circle  cx="50%" cy="50%" fill="#ffa500" r="120px" class="emoji-container"/>
-      <circle  cx="50%" cy="50%" fill="white" r="110px" class="emoji-container"/>
-      <circle  cx="50%" cy="50%" fill="#ffa500" r="100px" class="emoji-container"/>
+      <circle cx="50%" cy="50%" fill="#ffa500" r="120px" class="emoji-container"/>
+      <circle cx="50%" cy="50%" fill="white" r="110px" class="emoji-container"/>
+      <circle cx="50%" cy="50%" fill="#ffa500" r="100px" class="emoji-container"/>
       <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" class="welcome-emoji">👋</text>
     </g>
   </g>
