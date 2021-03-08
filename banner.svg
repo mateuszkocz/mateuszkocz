@@ -1,5 +1,5 @@
 <svg width="1500" height="500" viewBox="0 0 1500 500" xmlns="http://www.w3.org/2000/svg">
-  <style>
+  <style type="text/css">
     /* Font converter: https://amio.github.io/embedded-google-fonts/ */
     @font-face {
       font-family: 'Lato';
@@ -11,7 +11,9 @@
     }
 
     .container {
-      position: relative;
+      animation-name: text-background-fill;
+      animation-duration: 2s;
+      animation-delay: 3s;
     }
 
     .intro-text {
@@ -19,6 +21,15 @@
       font-size: 6rem;
       font-family: 'Lato', sans-serif;
       font-weight: 100;
+    }
+
+    @keyframes text-background-fill {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
   <g class="container">
