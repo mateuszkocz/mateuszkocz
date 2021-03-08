@@ -11,12 +11,13 @@
     }
 
     .intro-text {
-      fill: rgb(38, 139, 210);
+      fill: white;
       font-size: 6rem;
       font-family: 'Lato', sans-serif;
       font-weight: 100;
     }
   </style>
 
+  <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)"/>
   <text x="20" y="35" class="intro-text">Hello, I'm Mateusz</text>
 </svg>
