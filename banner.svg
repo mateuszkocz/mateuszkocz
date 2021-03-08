@@ -10,11 +10,35 @@
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    .container {
-      opacity: 0;
-      animation-name: text-background-fill;
+    .emoji-container {
+      animation-name: scale;
       animation-duration: 2s;
-      animation-delay: 3s;
+      animation-delay: 0;
+      animation-fill-mode: forwards;
+      transform-origin: 50% 50%;
+
+      border: 5px solid red;
+      box-shadow: 0 0 10 #ffa500;
+      border-radius: 100%;
+    }
+
+    .welcome-emoji {
+      font-size: 6rem;
+      opacity: 0;
+      animation-name: appear, wave;
+      animation-duration: 1s, 500ms;
+      animation-delay: 2s, 3s;
+      animation-fill-mode: forwards, both;
+      animation-iteration-count: 1, 2;
+      transform-origin: 50% 50%;
+    }
+
+    .slide-content {
+      opacity: 0;
+      animation-name: appear;
+      animation-duration: 2s;
+      animation-delay: 6s;
+      animation-fill-mode: forwards;
     }
 
     .intro-text {
@@ -24,7 +48,7 @@
       font-weight: 100;
     }
 
-    @keyframes text-background-fill {
+    @keyframes appear {
       from {
         opacity: 0;
       }
@@ -32,9 +56,37 @@
         opacity: 1;
       }
     }
+
+    @keyframes scale {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes wave {
+      0% {
+        transform: rotate(0);
+      }
+      50% {
+        transform: rotate(20deg);
+      }
+      100% {
+        transform: rotate(0);
+      }
+    }
   </style>
-  <g class="container">
-    <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)" rx="6"/>
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="intro-text">Hello, I'm Mateusz</text>
+  <g class="slide">
+    <rect x="0" y="0" height="100%" width="100%" fill="white" rx="6"/>
+    <circle  cx="50%" cy="50%" fill="#ffa500" r="120px" class="emoji-container"/>
+    <circle  cx="50%" cy="50%" fill="white" r="110px" class="emoji-container"/>
+    <circle  cx="50%" cy="50%" fill="#ffa500" r="100px" class="emoji-container"/>
+    <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" class="welcome-emoji">👋</text>
   </g>
+<!--  <g class="slide-content">-->
+<!--    <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)" rx="6"/>-->
+<!--    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="intro-text">Hello, I'm Mateusz</text>-->
+<!--  </g>-->
 </svg>
