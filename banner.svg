@@ -106,7 +106,7 @@
   </style>
   <defs>
     <clipPath id="clip">
-      <rect width="500px" height="100px" rx="6" fill="white"/>
+      <rect width="1300px" height="300px" rx="6" fill="white"/>
     </clipPath>
   </defs>
 
@@ -127,5 +127,4 @@
       <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" class="welcome-emoji">👋</text>
     </g>
   </g>
-
 </svg>
