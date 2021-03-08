@@ -1,4 +1,10 @@
-<svg width="1500" height="500" viewBox="0 0 1500 500" xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="1500"
+  height="500"
+  viewBox="0 0 1500 500"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="green"
+>
   <style type="text/css">
     /* Font converter: https://amio.github.io/embedded-google-fonts/ */
     @font-face {
@@ -33,12 +39,27 @@
       transform-origin: 50% 50%;
     }
 
-    .slide-content {
-      opacity: 0;
-      animation-name: appear;
+    .emoji-slide {
+      animation-name: disappear;
+      animation-duration: 1s;
+      animation-delay: 5s;
+      animation-fill-mode: forwards;
+      transform-origin: 50% 50%;
+    }
+
+<!--    .slide-content {-->
+<!--      opacity: 0;-->
+<!--      animation-name: appear;-->
+<!--      animation-duration: 2s;-->
+<!--      animation-delay: 6s;-->
+<!--      animation-fill-mode: forwards;-->
+<!--    }-->
+    .emoji-slide-background {
+      animation-name: scale-down;
       animation-duration: 2s;
       animation-delay: 6s;
       animation-fill-mode: forwards;
+      transform-origin: 50% 50%;
     }
 
     .intro-text {
@@ -77,16 +98,31 @@
         transform: rotate(0);
       }
     }
+
+    @keyframes disappear {
+      to {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes scale-down {
+      to {
+        transform: scale(0);
+      }
+    }
   </style>
-  <g class="slide">
-    <rect x="0" y="0" height="100%" width="100%" fill="white" rx="6"/>
+  <g class="slide-content">
+    <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)" rx="6"/>
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="intro-text">Hello, I'm Mateusz</text>
+  </g>
+
+  <circle cx="50%" cy="50%" fill="white" r="1500px" class="emoji-slide-background"/>
+  <g class="slide emoji-slide">
+<!--    <rect x="0" y="0" height="100%" width="100%" fill="white" rx="6"/>-->
     <circle  cx="50%" cy="50%" fill="#ffa500" r="120px" class="emoji-container"/>
     <circle  cx="50%" cy="50%" fill="white" r="110px" class="emoji-container"/>
     <circle  cx="50%" cy="50%" fill="#ffa500" r="100px" class="emoji-container"/>
     <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" class="welcome-emoji">👋</text>
   </g>
-<!--  <g class="slide-content">-->
-<!--    <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)" rx="6"/>-->
-<!--    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="intro-text">Hello, I'm Mateusz</text>-->
-<!--  </g>-->
 </svg>
