@@ -3,7 +3,7 @@
   height="500"
   viewBox="0 0 1500 500"
   xmlns="http://www.w3.org/2000/svg"
-  fill="green"
+  clip-path="url(#clip)"
 >
   <style type="text/css">
     /* Font converter: https://amio.github.io/embedded-google-fonts/ */
@@ -47,13 +47,6 @@
       transform-origin: 50% 50%;
     }
 
-<!--    .slide-content {-->
-<!--      opacity: 0;-->
-<!--      animation-name: appear;-->
-<!--      animation-duration: 2s;-->
-<!--      animation-delay: 6s;-->
-<!--      animation-fill-mode: forwards;-->
-<!--    }-->
     .emoji-slide-background {
       animation-name: scale-down;
       animation-duration: 2s;
@@ -64,7 +57,7 @@
 
     .intro-text {
       fill: white;
-      font-size: 6rem;
+      font-size: 5rem;
       font-family: 'Lato', sans-serif;
       font-weight: 100;
     }
@@ -112,14 +105,22 @@
       }
     }
   </style>
+  <defs>
+    <clipPath id="clip">
+      <rect id="background" width="100%" height="100%" rx="6" fill="red"/>
+    </clipPath>
+  </defs>
+
+  <!-- Main text -->
   <g class="slide-content">
-    <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)" rx="6"/>
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="intro-text">Hello, I'm Mateusz</text>
+    <rect x="0" y="0" height="100%" width="100%" fill="rgb(38, 139, 210)"/>
+    <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" class="intro-text">Hi, I'm Mateusz</text>
+    <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" class="intro-text">I'm a software developer</text>
   </g>
 
+  <!-- Waving emoji -->
   <circle cx="50%" cy="50%" fill="white" r="1500px" class="emoji-slide-background"/>
   <g class="slide emoji-slide">
-<!--    <rect x="0" y="0" height="100%" width="100%" fill="white" rx="6"/>-->
     <circle  cx="50%" cy="50%" fill="#ffa500" r="120px" class="emoji-container"/>
     <circle  cx="50%" cy="50%" fill="white" r="110px" class="emoji-container"/>
     <circle  cx="50%" cy="50%" fill="#ffa500" r="100px" class="emoji-container"/>
