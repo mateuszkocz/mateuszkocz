@@ -16,5 +16,5 @@
   </style>
 
   <text x="20" y="35" class="intro-text">Hello, I'm Mateusz</text>
-  <text x="20" y="35" class="intro-text-2">Hello, I'm Mateusz</text>
+  <text x="20" y="80" class="intro-text-2">Hello, I'm Mateusz</text>
 </svg>
