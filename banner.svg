@@ -18,7 +18,7 @@
     .emoji-container {
       animation-name: scale;
       animation-duration: 750ms;
-      animation-delay: 0;
+      animation-delay: 500ms;
       animation-fill-mode: forwards;
       animation-timing-function: cubic-bezier(.74,.2,.72,.19);
       transform-origin: 50% 50%;
@@ -33,7 +33,7 @@
       opacity: 0;
       animation-name: appear, wave;
       animation-duration: 250ms, 500ms;
-      animation-delay: 1s, 1.5s;
+      animation-delay: 1.5s, 2s;
       animation-fill-mode: forwards, both;
       animation-iteration-count: 1, 2;
       transform-origin: 50% 50%;
@@ -42,7 +42,7 @@
     .emoji-slide {
       animation-name: disappear;
       animation-duration: 1s;
-      animation-delay: 2.5s;
+      animation-delay: 3s;
       animation-fill-mode: forwards;
       transform-origin: 50% 50%;
     }
@@ -50,7 +50,7 @@
     .emoji-slide-background {
       animation-name: scale-down;
       animation-duration: 1s;
-      animation-delay: 3s;
+      animation-delay: 3.5s;
       animation-fill-mode: forwards;
       animation-timing-function: ease-out;
       transform-origin: 50% 50%;
@@ -108,7 +108,7 @@
   </style>
   <defs>
     <clipPath id="clip">
-      <rect width="1488px" height="488px" rx="6" fill="white"/>
+      <rect width="1500px" height="500px" rx="6" fill="white"/>
     </clipPath>
   </defs>
 
