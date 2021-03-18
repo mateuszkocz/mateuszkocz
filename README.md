@@ -1,6 +1,6 @@
 [![Banner](https://raw.githubusercontent.com/mateuszkocz/mateuszkocz/master/banner.svg)](https://mateusz.kocz.pl)
 
-<div style="text-align: center">
+<div align="center">
   
   [Blog](https://radiatingstar.com)
   ★
