@@ -33,12 +33,13 @@
     .welcome-emoji {
       font-size: 6rem;
       opacity: 0;
-      animation-name: appear, wave;
-      animation-duration: 250ms, 500ms;
-      animation-delay: 1.5s, 2s;
-      animation-fill-mode: forwards, both;
-      animation-iteration-count: 1, 2;
+      animation-name: appear;
+      animation-duration: 250ms;
+      animation-delay: 1.5s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
       transform-origin: 50% 50%;
+      fill: white;
     }
 
     .emoji-slide {
@@ -83,18 +84,6 @@
       }
     }
 
-    @keyframes wave {
-      0% {
-        transform: rotate(0);
-      }
-      50% {
-        transform: rotate(20deg);
-      }
-      100% {
-        transform: rotate(0);
-      }
-    }
-
     @keyframes disappear {
       to {
         transform: scale(0);
@@ -125,10 +114,8 @@
     <!-- Waving emoji -->
     <circle cx="50%" cy="50%" fill="white" r="1500px" class="emoji-slide-background"/>
     <g class="slide emoji-slide">
-      <circle cx="50%" cy="50%" fill="#ffa500" r="120px" class="emoji-container"/>
-      <circle cx="50%" cy="50%" fill="white" r="110px" class="emoji-container"/>
-      <circle cx="50%" cy="50%" fill="#ffa500" r="100px" class="emoji-container"/>
-      <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" class="welcome-emoji">👋</text>
+      <circle cx="50%" cy="50%" fill="#FC913A" r="1500px" class="emoji-container"/>
+      <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" class="welcome-emoji">★</text>
     </g>
   </g>
 </svg>
